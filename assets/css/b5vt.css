@@ -1,0 +1,139 @@
+.left-tabs.sideways-tabs, .right-tabs.sideways-tabs {
+    margin-top: 5rem;
+    position: relative;
+    margin-bottom: 0
+}
+
+.left-tabs.nav-tabs, .left-tabs.sideways-tabs, .right-tabs.nav-tabs, .right-tabs.sideways-tabs {
+    height: 100%;
+    flex-direction: column
+}
+
+.ellipsis {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding-right: .5rem
+}
+
+.vtabs .tab-clickable {
+    cursor: pointer
+}
+
+.right-tabs .nav-link {
+    margin-left: -1px;
+    text-align: right
+}
+
+.left-tabs.sideways-tabs {
+    left: -3.2rem
+}
+
+.sideways-tabs.left-tabs .nav-item {
+    transform: rotate(-90deg);
+    height: 1rem;
+    margin-bottom: calc(8rem - 1rem)
+}
+
+.sideways-tabs.left-tabs .nav-link {
+    width: 8rem;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.right-tabs.sideways-tabs {
+    right: 3.2rem
+}
+
+.sideways-tabs.right-tabs .nav-item {
+    transform: rotate(90deg);
+    height: 1rem;
+    margin-bottom: calc(8rem - 1rem)
+}
+
+.sideways-tabs.right-tabs .nav-link {
+    width: 8rem;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.vtabs .accordion-header {
+    display: none
+}
+
+@media (max-width:767px) {
+    .left-tabs.nav-tabs {
+        flex-direction: row;
+        min-width: 100%;
+        left: auto;
+        margin-top: auto
+    }
+
+    .left-tabs .nav-link {
+        width: 8rem;
+        text-align: center;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        margin-right: 0;
+        margin-bottom: -1px
+    }
+
+    .sideways-tabs.left-tabs .nav-item, .sideways-tabs.right-tabs .nav-item {
+        transform: none;
+        height: auto;
+        width: auto;
+        margin-bottom: 0
+    }
+
+    .right-tabs.nav-tabs {
+        flex-direction: row;
+        min-width: 100%;
+        right: auto;
+        margin-top: auto
+    }
+
+    .right-tabs .nav-link, .sideways-tabs.right-tabs .nav-link {
+        width: 8rem;
+        text-align: center;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        margin-left: 0;
+        margin-top: -1px;
+    }
+}
+@media (max-width:428px) {
+    .left-tabs.nav-tabs {
+        display: none
+    }
+
+    .right-tabs.nav-tabs {
+        display: none
+    }
+
+    .vtabs .tab-content>.tab-pane {
+        display: block !important;
+        opacity: 1
+    }
+
+    .vtabs .accordion-header {
+        display: block
+    }
+
+    .vtabs button.accordion-button:focus {
+
+        outline: 0;
+        box-shadow: none
+    }
+}
+
+@media (min-width:429px) {
+    .vtabs .accordion-body.collapse {
+        display: block
+    }
+}

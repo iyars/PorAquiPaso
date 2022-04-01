@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <title>Por aquí pasó</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/poraquipaso.css">
+    <link rel="stylesheet" href="assets/css/b5vt.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="container vtabs">
+        <div class="row d-flex align-items-stretch">
+            <div class="col-3 menu-col shadow-lg">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="logo">
+                            <img class="img-fluid" src="assets/img/logo-independencia.png" alt="Logo independencia" />
+                            <h2>Independencia</h2>
+                        </div>
+                    </div>
+                    <div class="col-3 p-0">
+                        <ul class="nav nav-tabs left-tabs" role="tablist">
+                            <li class="nav-item" role="presentation">
+                                <div class="nav-link tab-clickable" role="tab" data-bs-toggle="tab"
+                                    data-bs-target="#miguel_hidalgo" aria-controls="miguel_hidalgo"
+                                    aria-selected="true">
+                                    <img class="img-personajes-icn img-fluid" src="assets/img/img-hidalgo-icn.png"
+                                        alt="Imagen de Hidalgo" />
+                                    <h3>Hidalgo</h3>
+                                </div>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <div class="nav-link tab-clickable" role="tab" data-bs-toggle="tab"
+                                    data-bs-target="#personaje" aria-controls="personaje" aria-selected="false">
+                                    <img class="img-personajes-icn img-fluid" src="assets/img/img-noimg.png"
+                                        alt="Imagen de Hidalgo" />
+                                    <h3>Nombre</h3>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-9 p-0">
+                        <div id="accordion-left-tabs" class="tab-content accordion">
+                            <div id="miguel_hidalgo" class="tab-pane fade show active accordion-item" role="tabpanel">
+                                <img class="img-personaje-principal img-fluid" src="assets/img/img-hidalgo.png"
+                                    alt="Miguel Hidalgo">
+                                <div class="dropdown mt-n4">
+                                    <a class="dropdown-toggle related" href="#" role="button" id="dropdownMenuLink"
+                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                        Personajes relacionados
+                                    </a>
+                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                        <li><a class="dropdown-item" data-bs-toggle="modal"
+                                                data-bs-target="#exampleModal">Action</a></li>
+                                        <li><a class="dropdown-item" data-bs-toggle="modal"
+                                                data-bs-target="#exampleModal">Another action</a></li>
+                                        <li><a class="dropdown-item last" data-bs-toggle="modal"
+                                                data-bs-target="#exampleModal">Something else here</a></li>
+                                    </ul>
+                                </div>
+                                <ul class="nav nav-tabs left-tabs" role="tablist">
+                                    <li class="nav-item" role="presentation">
+                                        <!-- <div class="nav-link tab-clickable" role="tab" data-bs-toggle="tab"
+                                            data-bs-target="#biografia-tab" aria-controls="biografia-tab"
+                                            aria-selected="true">
+                                            <img class="seccion-icon" src="assets/img/icn-biografia.png" alt="">
+                                            <div class="seccion-title">
+                                                <h4 class="secciones" >Biografía</h4>
+                                            </div>
+                                        </div> -->
+                                        <a data-bs-toggle="modal" href="#hidalgo_biografia">
+                                            <div class="nav-link">
+                                                <img class="seccion-icon" src="assets/img/icn-biografia.png" alt="">
+                                                <div class="seccion-title">
+                                                    <h4 class="secciones">Biografía</h4>
+                                                </div>
+                                            </div>
+                                        </a>  
+                                    </li>
+
+                                    <div class="modal fade" id="hidalgo_biografia" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                        <div class="modal-dialog">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h5 class="modal-title" id="">Biografia</h5>
+                                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                        aria-label="Close"></button>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <img class="img-fluid" src="assets/img/contenido/hidalgo-biografia.png" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                    <li class="nav-item" role="presentation">
+                                        <!-- <div class="nav-link tab-clickable" role="tab" data-bs-toggle="tab"
+                                            data-bs-target="#ruta-tab" aria-controls="ruta-tab" aria-selected="false">
+                                            <img class="seccion-icon" src="assets/img/icn-ruta.png" alt="">
+                                            <div class="seccion-title">
+                                                <h4 class="secciones">Ruta</h4>
+                                            </div>
+                                        </div> -->
+                                        <a data-bs-toggle="modal" href="#hidalgo_ruta">
+                                            <div class="nav-link">
+                                                <img class="seccion-icon" src="assets/img/icn-ruta.png" alt="">
+                                                <div class="seccion-title">
+                                                    <h4 class="secciones">Ruta</h4>
+                                                </div>
+                                            </div>
+                                        </a>                                          
+                                    </li>
+
+                                    <div class="modal fade" id="hidalgo_ruta" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                        <div class="modal-dialog">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h5 class="modal-title" id="">Ruta</h5>
+                                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                        aria-label="Close"></button>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <img class="img-fluid" src="assets/img/contenido/hidalgo-ruta.png" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    
+                                    <li class="nav-item" role="presentation">
+                                        <!-- <div class="nav-link tab-clickable" role="tab" data-bs-toggle="tab"
+                                            data-bs-target="#cartografia-tab" aria-controls="cartografia-tab"
+                                            aria-selected="false">
+                                            <img class="seccion-icon" src="assets/img/icn-cartografia.png" alt="">
+                                            <div class="dropdown seccion-title">
+                                                <a class="dropdown-toggle secciones" href="#" role="button"
+                                                    id="dropdownCartografia" data-bs-toggle="dropdown"
+                                                    aria-expanded="false">
+                                                    Cartografía
+                                                </a>
+                                                <ul class="dropdown-menu" aria-labelledby="dropdownCartografia">
+                                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                                                    <li><a class="dropdown-item last" href="#">Something else here</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div> -->
+                                        <div class="nav-link">
+                                            <img class="seccion-icon" src="assets/img/icn-cartografia.png" alt="">
+                                            <div class="dropdown seccion-title">
+                                                <a class="dropdown-toggle secciones" href="#" role="button"
+                                                    id="dropdownCartografia" data-bs-toggle="dropdown"
+                                                    aria-expanded="false">
+                                                    Cartografía
+                                                </a>
+                                                <ul class="dropdown-menu" aria-labelledby="dropdownCartografia">
+                                                    <li><a class="dropdown-item" data-bs-toggle="modal"
+                                                            data-bs-target="#hidalgo_cartografia_guanajuato">Guanajuato</a></li>
+                                                    <li><a class="dropdown-item" data-bs-toggle="modal"
+                                                            data-bs-target="#hidalgo_cartografia_queretaro">Querétaro</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </li>
+
+
+                                    <div class="modal fade" id="hidalgo_cartografia_guanajuato" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                        <div class="modal-dialog">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h5 class="modal-title" id="">Cartografía elaborada por la SICT</h5>
+                                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                        aria-label="Close"></button>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <img class="img-fluid" src="assets/img/contenido/hidalgo-cartografia-guanajuato.png" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+
+                                    <div class="modal fade" id="hidalgo_cartografia_queretaro" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                        <div class="modal-dialog">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h5 class="modal-title" id="">Cartografía elaborada por la SICT</h5>
+                                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                        aria-label="Close"></button>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <img class="img-fluid" src="assets/img/contenido/hidalgo-cartografia-queretaro.png" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    
+                                    <li class="nav-item" role="presentation">
+                                        <div class="nav-link tab-clickable" role="tab" data-bs-toggle="tab"
+                                            data-bs-target="#documentos-tab" aria-controls="documentos-tab"
+                                            aria-selected="false">
+                                            <img class="seccion-icon" src="assets/img/icn-documentos.png" alt="">
+                                            <div class="dropdown seccion-title">
+                                                <a class="dropdown-toggle secciones" href="#" role="button"
+                                                    id="dropdownDocumentos" data-bs-toggle="dropdown"
+                                                    aria-expanded="false">
+                                                    Documentos
+                                                </a>
+                                                <ul class="dropdown-menu" aria-labelledby="dropdownDocumentos">
+                                                    <li><a class="dropdown-item" data-bs-toggle="modal"
+                                                            data-bs-target="#hidalgo_documentos_01">Decreto contra la esclavitud</a></li>
+                                                    <li><a class="dropdown-item" data-bs-toggle="modal"
+                                                            data-bs-target="#hidalgo_documentos_02">Primera proclama formal</a></li>
+                                                </ul>
+                                            </div>
+
+                                        </div>
+                                    </li>
+
+
+                                    <div class="modal fade" id="hidalgo_documentos_01" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                        <div class="modal-dialog">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h5 class="modal-title" id="">Documentos históricos</h5>
+                                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                        aria-label="Close"></button>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <img class="img-fluid" src="assets/img/contenido/hidalgo-documentos-decreto_contra_exclavitud.png" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+
+                                    <div class="modal fade" id="hidalgo_documentos_02" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                        <div class="modal-dialog">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h5 class="modal-title" id="">Documentos históricos</h5>
+                                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                        aria-label="Close"></button>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <img class="img-fluid" src="assets/img/contenido/hidalgo-documentos-primera_proclama.png" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>                                    
+                                </ul>
+
+                            </div>
+                            <div id="personaje" class="tab-pane fade accordion-item" role="tabpanel">
+                                Personaje
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-8">
+                <div class="row info-content shadow-b">
+                    <div class="col-4">
+                        <img class="img-fluid float-start logo-top" src="assets/img/logo-poraquipaso.png" alt="">
+                    </div>
+                    <div class="col-4">
+                        <img class="img-fluid mx-auto d-block logo-top" src="assets/img/logo-gestas.png" alt="">
+                    </div>
+                    <div class="col-4">
+                        <img class="img-fluid float-end" src="assets/img/logo-enelsistemacarreteronacional.png" alt="">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <h2 class="personaje-title">
+                            Ruta<br/>
+                            <span class="w700">Miguel<br/>
+                            Hidalgo</span>
+                        </h2>
+                        <img class="img-fluid" src="assets/img/mapa.png" alt="">
+                        <div class="position-relative">
+                            <div class="position-absolute bottom-0 start-0">
+                                <img src="assets/img/logo-comunicaciones.png" alt="">
+                            </div>
+                            <div class="position-absolute bottom-0 end-0">
+                                <img src="assets/img/rosa.png" alt="">
+                            </div>
+                          </div>
+                        
+                        
+                    </div>
+                    <!-- <div id="accordion-left-tabs" class="tab-content accordion">
+                        <div id="biografia-tab" class="tab-pane fade accordion-item" role="tabpanel">
+                            <h2>Biografía</h2>
+                            <p>Texto 1</p>
+                        </div>
+    
+                        <div id="ruta-tab" class="tab-pane fade accordion-item" role="tabpanel">
+                            <h2>Ruta</h2>
+                            <p>Texto 2</p>
+                        </div>
+    
+                        <div id="cartografia-tab" class="tab-pane fade accordion-item" role="tabpanel">
+                            <h2>Cartografia</h2>
+                            <p>Texto 3</p>
+                        </div>
+    
+                        <div id="documentos-tab" class="tab-pane fade accordion-item" role="tabpanel">
+                            <h2>Documentos</h2>
+                            <p>Texto 4</p>
+                        </div>
+                    </div> -->
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    </div>
+
+
+
+
+
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                ...
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-primary">Save changes</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+                    <div class="modal-dialog modal-dialog-centered">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="exampleModalToggleLabel">Modal 1</h5>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                          Show a second modal and hide this one with the button below.
+                        </div>
+                        <div class="modal-footer">
+                          <button class="btn btn-primary" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal" data-bs-dismiss="modal">Open second modal</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="modal fade" id="exampleModalToggle2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+                    <div class="modal-dialog modal-dialog-centered">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="exampleModalToggleLabel2">Modal 2</h5>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                          Hide this modal and show the first with the button below.
+                        </div>
+                        <div class="modal-footer">
+                          <button class="btn btn-primary" data-bs-target="#exampleModalToggle" data-bs-toggle="modal" data-bs-dismiss="modal">Back to first</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                                
+
+    <!-- Bootstrap JS -->
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

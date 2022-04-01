@@ -1,0 +1,196 @@
+.mt-n4 {
+    margin-top: -4px;
+}
+
+.w700 {
+    font-weight: 700 !important;
+    font-size: 49pt;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    font-family: 'Jost', sans-serif;
+    background-image: url(../img/background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #7E4E24;
+}
+
+.menu-col {
+    padding: 20px;
+    background-image: url(../img/bg-menu-2.png);
+    background-size: 100% 100%;
+    min-height: 100vh;
+    z-index: 90000;
+}
+
+.logo-top {
+    padding: 15px 0;
+    max-height: 90px;
+}
+
+.shadow-b {
+    box-shadow: 0px 30px 20px -30px rgba(0,0,0,.30)!important;
+}
+
+.logo {
+    text-align: center;
+}
+
+.logo h2 {
+    font-size: 23pt;
+    color: #A5754E;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 700;
+}
+
+.nav-link {
+    color: #7E4E24
+}
+/* 
+.nav-link.tab-clickable {
+    text-align: center;
+    text-transform: uppercase;
+} */
+
+.nav-link {
+    text-align: center;
+    text-transform: uppercase;
+}
+/* 
+.nav-link.tab-clickable h3 {
+    font-size: 9pt;
+} */
+
+
+.nav-link h3 {
+    font-size: 9pt;
+}
+
+.nav-link:focus, .nav-link:hover {
+    color: #7E4E24;
+}
+
+.nav-tabs .nav-link:focus, .nav-tabs .nav-link:hover {
+    border-color: transparent;
+}
+
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+    background-color: transparent;
+    border: none;
+    color: #7E4E24;
+}
+
+.img-personajes-icn {
+    width: 67px;
+}
+
+.nav-link {
+    padding: initial;
+}
+
+.accordion-item {
+    background-color: transparent;
+    border: none;
+}
+
+.tab-pane {
+    text-align: center;
+}
+
+.related {
+    background-color: #EDE5D3;
+    border: solid 1px #D4BCA0;
+    border-radius: 0;
+    font-size: 7pt;
+    color: #7E4E24;
+    text-decoration: none;
+    padding: 3px 10px;
+    text-transform: uppercase;
+}
+
+.dropdown a:hover {
+    color: #7E4E24;
+}
+
+.secciones {
+    font-size: 8pt;
+    color: #7E4E24;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+h4.secciones {
+    padding: 6px 10px;
+}
+
+ul.dropdown-menu.show {
+    z-index: 1000;
+    background-color: #F7F3E7;
+    border: solid 1px #916A44;
+    border-radius: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.dropdown-item {
+    color: #7E4E24;
+    font-size: 9pt;
+    text-transform: none;
+    border-bottom: dashed 1px #916A44;
+}
+
+.last {
+    border-bottom: none;
+}
+
+.seccion-icon {
+    height: 100px;
+}
+
+.seccion-title {
+    background-image: url(../img/bg-subseccion.png);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 115px;
+    height: 25px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.modal-content {
+    background-color: transparent;
+    border: none;
+}
+
+.modal-title {
+    color: #f5f1e4;
+    font-size: 44pt;
+}
+
+.modal {
+    background-color: rgba(63,43,38,0.3);
+}
+
+h2.personaje-title {
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 44pt;
+    line-height: 42pt;
+    color: #7E4E24;
+}
+
+.btn-close {
+    background: transparent url(../img/close.svg) center/1em auto no-repeat;
+    opacity: 1;
+}
+
+.modal-dialog {
+    max-width: 1000px;
+    margin-left: 35%;
+}
